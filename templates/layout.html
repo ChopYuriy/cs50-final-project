@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <title>Final Project {% block title %}{% endblock %}</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="border navbar navbar-expand-md navbar-light" style="background-color: #dfdbdb">
+            <div class="container-fluid bg-image hover-overlay">
+                {% if session["user_id"] %}
+
+                <ul class="navbar-nav me-auto mt-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index">
+                            <img class="img" src="{{url_for('static', filename='images/road-barrier-cartoon.jpg')}}"
+                                alt="logo" width="90" /></a>
+                    </li>
+                    <ul class="navbar-nav ms-auto mt-2">
+                        <li class="nav-item logout"><a class="nav-link" href="/logout">Log Out</a></li>
+                    </ul>
+
+                    {% else %}
+                    <ul class="navbar-nav me-auto mt-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index">
+                                <img class="img" src="{{url_for('static', filename='images/road-barrier-cartoon.jpg')}}"
+                                    alt="logo" width="90" /></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mt-2">
+                        <li class="nav-item register">
+                            <a class="nav-link " href="/register">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link login" href="/login">Log In</a>
+                        </li>
+                    </ul>
+                    {% endif %}
+            </div>
+        </nav>
+    </header>
+    <main>{% block main %}{% endblock %}</main>
+    <footer class="sticky-footer">
+        <div class="border navbar navbar-expand-md navbar-light" style="background-color: #ffffff">
+            <ul class="navbar-nav me-auto mt-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index">
+                        <img class="img" src="{{url_for('static', filename='images/road-barrier-cartoon-white.jpg')}}"
+                            alt="logo" width="90" /></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-auto mt-2">
+                <li class="nav-item " id="contacts"><a class="nav-link" href="https://www.softserveinc.com/uk-ua"
+                        target="_blank" rel="noopener noreferrer" id="contacts1">Feedback</a></li>
+                <li class="nav-item " id="contacts"><a class="nav-link" href="mailto:ledzepchop@gmail.com"
+                        id="contacts1">Mail</a></li>
+                <li class="nav-item " id="contacts"><a class="nav-link" href="tel:+0685008800" id="contacts1">Call
+                        us</a>
+                </li>
+            </ul>
+    </footer>
+    <div>
+        <!-- <div class="text-center">&#169 2022 Final Project</div> -->
+    </div>
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+
+</html>

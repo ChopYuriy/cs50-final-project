@@ -1,0 +1,214 @@
+body {
+    min-height: 100vh;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 4em;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3em;
+    
+}
+
+.sticky-footer {
+    position: sticky;
+    top: 100%;
+        
+}
+
+/* hover photo style */
+/* .hover-3::after {
+    content: '';
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    border: 1px solid #fff;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 90;
+    transition: all 0.3s;
+    transform: scale(1.1);
+    opacity: 0;
+    display: block;
+    opacity: 0;
+}
+
+.hover-3-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 99;
+}
+
+.hover-3-description {
+    opacity: 0;
+    transform: scale(1.3);
+    transition: all 0.3s;
+}
+
+.hover-3 img {
+    width: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hover-3 .hover-overlay {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hover-3:hover img {
+    width: 100%;
+}
+
+.hover-3:hover::after {
+    opacity: 1;
+    transform: none;
+}
+
+.hover-3:hover .hover-3-description {
+    opacity: 1;
+    transform: none;
+}
+
+.hover-3:hover .hover-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+   /* end hover style */ 
+
+
+
+.logout {
+    font-weight: 700;
+    font-size: large;
+    
+}
+
+
+.register {
+    font-weight: 700;
+    font-size: large;
+}
+
+.login {
+    font-weight: 700;
+    font-size: large;
+}
+
+#contacts {
+    font-weight: 700;
+    font-size: large;
+    padding-right: 100px;
+}
+
+#button1 {
+    margin-top: 100px;   
+    margin-bottom: 40px;
+   
+}
+
+#form-register {
+    margin-top: 5em;
+    margin-bottom: 15em;
+}
+
+#main-btn {
+    width: 600px;
+}
+
+
+
+.above-footer {
+    margin-bottom: 5em;
+}
+
+
+#first-paragraph {
+    max-width: 500px;
+}
+
+#add-photo {
+    display:inline-block;
+    height: 80vh;
+    gap: 10px;
+}
+
+#display-image {
+    display:inline-block;
+    gap: 10px;
+        
+}
+
+  /*  addPhoto style */
+
+   .preview-image {
+       height: 200px;
+       width: 100%;
+       border-top-left-radius: 10px;
+       border-top-right-radius: 10px;
+   }
+
+   .custom-file-upload {
+       width: 100px;
+       text-align: center;
+       margin-left: 46%;
+       margin-top: 40px;
+       border: 1px solid #ccc;
+       display: inline-block;
+       padding: 6px 12px;
+       cursor: pointer;
+       background-color: #0D6EFD;
+       color: #ffffff;
+       font-weight: 600;        
+       border-radius: 10px;
+   }
+
+   .custom-file-upload:hover {
+    background-color: #0B5ED7;
+   }
+
+   .custom-file-upload:focus {
+       box-shadow: 0px 0px 0 10px #98C1FE;
+   }
+
+   input[type="file"] {
+       display: none;
+   }
+
+   #paragraph {
+       font-size: 30px;
+       line-height: 50px;
+   }
+
+   
+   .column {
+       
+       width: 35%;
+       color: #3182ce;
+       background-color: white;
+       margin-top: 7px;
+       margin-left: 10px;
+       border-radius: 10px;
+   }
+
+   .rowu {
+       width: 90%;
+       margin: auto;
+       text-align: center;
+   }
+
+   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+   @media screen and (max-width: 500px) {
+       .columnu {
+           width: 100%;
+       }
+   }
+

@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+AddPhoto
+{% endblock %}
+
+{% block main %}
+
+<form id="form" action="http://localhost:5000/upload" enctype="multipart/form-data" method="POST">
+
+    <!--            This form will redirect to the route '/upload' after submission               -->
+
+    <label class="custom-file-upload">
+        
+        <input type="file" name="file" id="file" onchange="document.getElementById('upload').click()" />
+        Add
+    </label>
+
+    <input id="upload" type="Submit" value="Upload" style="display: none;" />
+
+</form>
+<br><br>
+<div class="rowu">
+    {% for upload in uploads %}
+    <!--          This is the jinja2 tempate for writing any kind of loops or conditionals          -->
+    {% if ('png' in upload) or ('jpg' in upload) or ('jpeg' in upload) %}
+    <!--          Display only the jpg,png,jpeg file formats          -->
+    <div class="column">
+        <img class="preview-image" src="{{url_for('static', filename=upload)}}" alt="{{upload}}">
+        {% print(upload.split("/")[1][:20]) %}
+    </div>
+    {% endif %}
+    {% endfor %}
+
+
+{% endblock %}

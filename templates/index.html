@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block main %}
+
+<h1 class="text-center">Make your city more accessible</h1>
+<div class="d-flex justify-content-around">
+  <p class="lead" id="first-paragraph">
+    Many people are struggling moving through the city. Elderly people, ones who have mobility disability and even
+    parents
+    with baby stroller. They all face obstacles on our streets. But you can make a good impact on that.
+  </p>
+  <div class="hover hover-3 text-white rounded">
+    <img class="img-fluid rounded" src="{{url_for('static', filename='images/man-wheelchair.jpg')}}"
+      alt="Man on a wheel chair" width="360" />
+
+    <div class="hover-overlay"></div>
+    <div class="hover-3-content px-5 py-4">
+      <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">You are
+        </span>Awesome
+      </h3>
+      <p class="hover-3-description  text-uppercase mb-0">Donate here: https://savelife.in.ua/donate/#payOnce </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="d-flex justify-content-around ">
+
+  <img class="img-fluid rounded " src="{{url_for('static', filename='images/momy-stroller.jpg')}}"
+    alt="Mother with a baby in stroller" width="390" />
+
+  <p class="lead" id="first-paragraph">
+    Lviv is a very beautiful city. Its architecture admires us. But there is always something that can be improved.
+    High borders, absence of ramps and other obstacles makes living for low mobility people really hard. This site
+    was made to help solve these problems.
+  </p>
+
+</div>
+<h2 class="text-center">Let's do it</h2>
+<div class="text-center" id="button1">
+  <a href="/addPhoto" <button class="btn btn-primary btn-lg" type="button" id="main-btn">Add photo</button></a>
+</div>
+<h2 class="text-center">Usage:</h2>
+<div class="text-center above-footer">
+  <p class="lead text-center">-Take a photo of an obstacle</p>
+  <p class="lead text-center">-Name your photo with the exact address</p>
+  <p class="lead text-center">-Upload your photo to the site</p>
+</div>
+
+
+
+{% endblock %}
