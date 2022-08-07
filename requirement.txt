@@ -1,3 +1,9 @@
+cs50
+Flask
+Flask-Session
+gunicorn
+psycopg2
+requests
 attrs==19.3.0
 Automat==0.8.0
 autopep8==1.6.0
