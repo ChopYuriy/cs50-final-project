@@ -10,7 +10,7 @@ This is a web application. It allows user to upload and store photos of an obsta
 All you need is to register and login. After that on main page click the button "Add photo". Choose the right photo on your device and name it
 with the exact address. Click add and the photo will appear on the page. If the page was refreshed, the photos won't disappear.
 
-#### Game Demo:
+#### Demo:
 
 ![alt text](https://github.com/chopergame/CS50-Final-project/blob/main/demo.jpg "JPG")
 
