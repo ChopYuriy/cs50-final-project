@@ -1,4 +1,4 @@
-import os, requests, re
+import os,  re
 
 from flask import Flask, flash, redirect, render_template, request, session, url_for
 from cs50 import SQL
@@ -143,8 +143,9 @@ def uploader():
 app.config['UPLOAD_PATH'] = 'static/uploads'             # Storage path
 
 
+# This method is used to upload files
 @app.route("/upload", methods=['GET', 'POST'])
-def upload_file():                                       # This method is used to upload files
+def upload_file():                                       
     if request.method == 'POST':
         f = request.files['file']
         print(f.filename)
