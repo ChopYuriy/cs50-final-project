@@ -8,7 +8,7 @@
 
 This is a web application. It allows user to upload and store photos of an obstacles in your city. You can review them any time you want.
 All you need is to register and login. After that on main page click the button "Add photo". Choose the right photo on your device and name it
-with the exact address. Click add and the photo will appear on the page. If the page was refreshed, the photos won't disappear.
+with the exact address. Click add and the photo will appear on the page. If you refresh the page, the photos won't disappear. Making this web application was inspired by people who have mobility limits. Making their lifes easier we are making our lifes better. 
 
 #### Demo:
 
@@ -17,7 +17,7 @@ with the exact address. Click add and the photo will appear on the page. If the 
 
 ### Motivation:
 
-Many people are struggling moving through the city. Elderly people, ones who have mobility disability and even parents with baby stroller. They all face obstacles on our streets. But we can make a good impact on that. Lviv (your city) is a very beautiful city. Its architecture admires us. But there is always something that can be improved. High borders, absence of ramps and other obstacles makes living for low mobility people really hard. This site was made to help solve these problems.
+Many people are struggling moving through the city. Elderly people, ones who have mobility disability and even parents with baby stroller. They all face obstacles on our streets. But we can make a good impact on that. Lviv (your city) is a very beautiful city. Its architecture admires us. But there is always something that can be improved. High borders, absence of ramps and other obstacles makes living for low mobility people really hard. This site was made to help solve these problems. In conclusion I hope this web application will make a good impact in the future.
 
 ### Files:
 
