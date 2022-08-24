@@ -12,7 +12,7 @@ with the exact address. Click add and the photo will appear on the page. If the 
 
 #### Game Demo:
 
-![alt text](https://github.com/MariaSnegireva/robot/blob/main/robot_preview.gif "GIF")
+![alt text](https://github.com/chopergame/CS50-Final-project/blob/main/demo.jpg "JPG")
 
 
 ### Motivation:
