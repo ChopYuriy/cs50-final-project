@@ -10,7 +10,11 @@ This is a web application. It allows user to upload and store photos of an obsta
 All you need is to register and login. After that on main page click the button "Add photo". Choose the right photo on your device and name it
 with the exact address. Click add and the photo will appear on the page. If the page was refreshed, the photos won't disappear.
 
-### Files
+### Motivation:
+
+Many people are struggling moving through the city. Elderly people, ones who have mobility disability and even parents with baby stroller. They all face obstacles on our streets. But we can make a good impact on that. Lviv(your city) is a very beautiful city. Its architecture admires us. But there is always something that can be improved. High borders, absence of ramps and other obstacles makes living for low mobility people really hard. This site was made to help solve these problems.
+
+### Files:
 
 This application contains python files, html files, css file and database file. Main functionality was achieved in app.py file.
 I was debating in using JavaScript or Python for adding photos function. But after many trying and fails I switched to python.
